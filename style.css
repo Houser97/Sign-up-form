@@ -41,11 +41,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0 40px;
 }
 
 .container .subcontainer .first{
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .container .subcontainer .first .second_text {
@@ -56,4 +56,9 @@ body {
 
 .container .subcontainer .second {
     background-color: white;
+}
+
+.container .subcontainer .second form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
