@@ -35,42 +35,43 @@
             <div class="second">
                 <h1>Let's do it!</h1>
 
-                <form action="#" method="post">
+                <form action="#" method="post" id="form">
                     <div class="form_first_section">
                         <div class="first_name">
-                            <input type="text" name="first_name" id="user">
+                            <input type="text" name="first_name" id="user" required>
                             <span></span>
                             <label for="user">FIRST NAME</label>
                         </div>
 
                         <div>
-                            <input type="email" name="user_email" id="useremail">
+                            <input type="email" name="user_email" id="useremail" required>
                             <span></span>
                             <label for="useremail">EMAIL</label>
                         </div>
 
                         <div>
-                            <input type="password" name="user_pwd" id="pwd">
+                            <input type="password" name="user_pwd" id="pwd" required>
                             <span></span>
                             <label for="pwd">PASSWORD</label>
                         </div>
+                        <p id="error"></p>
                     </div>
 
                     <div class="form_second_section">
                         <div>
-                            <input type="text" name="user_last_name" id="last_name">
+                            <input type="text" name="user_last_name" id="last_name" required>
                             <span></span>
                             <label for="last_name">LAST NAME</label>
                         </div>
 
                         <div>
-                            <input type="tel" name="user_tel" id="usertel">
+                            <input type="tel" name="user_tel" id="usertel" required>
                             <span></span>
                             <label for="usertel">PHONE NUMBER</label>
                         </div>
 
                         <div>
-                            <input type="password" name="confirm_pwd" id="confirm">
+                            <input type="password" name="confirm_pwd" id="confirm" required>
                             <span></span>
                             <label for="confirm">CONFIRM PASSWORD</label>
                         </div>
@@ -78,7 +79,7 @@
                 </form>
             </div>
             <div class="third">
-                <input type="submit" value="Create Account">
+                <button type="submit" form="form">Create Account</button>
                 <div>Already have an account</div>
             </div>
         </div>

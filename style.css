@@ -85,7 +85,7 @@ a {
 
 .container .subcontainer {
     display: grid;
-    grid-template-rows: 0.7fr 1fr 0.4fr;
+    grid-template-rows: 0.6fr 1fr 0.4fr;
    
 }
 
@@ -132,7 +132,6 @@ form .form_first_section > * {
     flex-direction: column;
     border-bottom: 1px solid #adadad;
     margin-bottom: var(--margin-bottom-input);
-    background: #2980b9;
    
 }
 
@@ -193,14 +192,23 @@ form input:focus ~ span::before {
     width: 100%;
 }
 
-input[type='submit'] {
+button[type='submit'] {
     width: 180px;
     height: 50px;
     background-color: #005093;
     border: 2px solid black;
     border-radius: 10px;
-    color: #fffbf4;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+ #error {
+    margin-top: -25px;
+    margin-bottom: 0;
+    color: red;
+    font-size: 13px;
+    background: none;
+    background-color: none;
+    border-bottom: 0px;
+ }
