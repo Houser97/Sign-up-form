@@ -212,3 +212,8 @@ button[type='submit'] {
     background-color: none;
     border-bottom: 0px;
  }
+
+ .third a {
+     color: #005093;
+     text-decoration: none;
+ }
