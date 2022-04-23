@@ -1,3 +1,9 @@
+:root {
+    --transition-time-label: 0.4s;
+    --input-height: 20px;
+    --margin-bottom-input: 30px;
+}
+
 body {
     background: rgb(31, 30, 30);
     height: 100vh;
@@ -77,7 +83,8 @@ form .form_first_section > * {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #adadad;
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-bottom-input);
+    background: #2980b9;
    
 }
 
@@ -86,28 +93,31 @@ form .form_second_section > * {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #adadad;
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-bottom-input);
 }
 
 form label {
     position: absolute;
-    top: 45%;
+    top: -20px;
+    left: 5px;
     font-size: 14px;
     color: #adadad;
-    transition: 0.4s;
+    transition: var(--transition-time-label);
+    pointer-events: none;
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 20px;
     justify-content: flex-start;
+    margin-bottom: 30px;
 }
 
 input{
     
     border: 1px solid silver;
-    border-radius: 5px;
-    height: 30px;
+    height: var(--input-height);
     border: none;
+    background-color: none;
     padding: 0 5px;
     outline: none;
     font-size: 16px;
@@ -115,6 +125,22 @@ input{
 }
 
 form input:focus ~ label {
-    top: -10px;
+    font-size: 15px;
     color: #2691d9;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    top: var(--input-height); /*Corresponde con la altura del INPUT. */
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: var(--transition-time-label);
+}
+
+form input:focus ~ span::before {
+    color: #2691d9;
+    width: 100%;
 }
