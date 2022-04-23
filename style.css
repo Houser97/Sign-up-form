@@ -144,3 +144,15 @@ form input:focus ~ span::before {
     color: #2691d9;
     width: 100%;
 }
+
+input[type='submit'] {
+    width: 180px;
+    height: 50px;
+    background-color: #005093;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #fffbf4;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
