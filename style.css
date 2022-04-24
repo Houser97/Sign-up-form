@@ -153,13 +153,6 @@ form label {
     pointer-events: none;
 }
 
-h1 {
-    font-size: 25px;
-    justify-content: flex-start;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
 input{
     
     border: 1px solid silver;
@@ -218,3 +211,10 @@ button[type='submit'] {
      color: #005093;
      text-decoration: none;
  }
+
+ h1 {
+    font-size: 30px;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
